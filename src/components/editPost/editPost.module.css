@@ -1,0 +1,224 @@
+.editButton {
+    padding: 16px 20px;
+  background-color: #4f5f98;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
+  .editButton:hover {
+    background-color: #8094dd;
+  }
+
+  .deleteButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  .deleteButton:hover {
+    background-color: #d32f2f;
+  }
+  
+  .editContainer {
+    background-color: #36393e;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #eaeaea;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: #424549;
+  }
+  
+  .textArea {
+    min-height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .cancelButton {
+    background-color: crimson;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .submitButton {
+    background-color: #4f5f98;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .submitButton:disabled, .cancelButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .submitButton:hover:not(:disabled) {
+    background-color: #7289da;
+  }
+  
+  .cancelButton:hover:not(:disabled) {
+    background-color: rgba(220, 20, 60, 0.522);
+  }
+
+  /* Delete confirmation modal */
+.deleteConfirmOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.deleteConfirmModal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.deleteConfirmModal h3 {
+  margin-top: 0;
+  color: #f44336;
+}
+
+.deleteConfirmButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancelDeleteButton {
+  background-color: crimson;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.confirmDeleteButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.confirmDeleteButton:disabled, .cancelDeleteButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+  
+  /* Image upload styles */
+  .editor {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #1a8917;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .add {
+    display: flex;
+    gap: 10px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 999;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .addButton {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #1a8917;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .addButton label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .imagePreview {
+    margin-bottom: 15px;
+    max-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
